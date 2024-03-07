@@ -1,0 +1,210 @@
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+
+body {
+    background-color: black;
+    font-family: 'Star Wars', sans-serif;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+#buttons button {
+    font-size: 30px;
+    border-radius: 30px;
+    padding: 10px;
+    border: 0px;
+    color: grey;
+    background-color: black;
+}
+#buttons button:hover {
+    color: white;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+}
+
+#content table {
+    color: white;
+}
+
+table th {
+    font-size: 20px;
+}
+
+table {
+    margin: 20px;
+}
+
+#buttonBin {
+    width: 60px;
+    padding: 10px;
+    background-color: black;
+    color: red;
+    border: 0px;
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+}
+
+#buttonBin:hover {
+    color: brown;
+}
+
+#buttonPlus {
+    color: blue;
+    border: 0px;
+    font-size: 40px;
+    background-color: black;
+}
+
+#buttonPlus:hover {
+    color: cyan;
+}
+
+#delete {
+    height: 25px;
+    width: 25px;
+    background-color: white;
+}
+
+#firstRow, #secondRow, #thirdRow, #fourthRow, #fifthRow, #sixthRow {
+    text-align: center;
+}
+
+#firstRow {
+    width: 10px;
+}
+
+#sixthRow {
+    width: 130px;
+}
+
+#pageLeft, #pageRight {
+    color: red;
+    background-color: black;
+    border: 0px;
+    font-size: 50px;
+    text-align: center;
+}
+
+#pageLeft:hover, #pageRight:hover {
+    color: brown;
+}
+
+#pageNumber {
+    color: white;
+    background-color: black;
+    border: 0px;
+    text-align: center;
+    font-size: 50px;
+}
+
+#pages {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#amountElements {
+    color: white;
+    background-color: black;
+    border: 0px;
+    font-size: 50px;
+}
+
+#deleteButton {
+    color: white;
+    background-color: red;
+    position: fixed;
+    text-align: center;
+    bottom: 50px;
+    min-width: 500px;
+    height: 50px;
+    border: 0px;
+    border-radius: 50px;
+    font-size: 150%;
+    font-weight: 800;
+}
+
+#deleteButton:hover {
+    background-color: white;
+    color: red;
+}
+
+#allElementsWindow {
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+
+#allElementsWindow table{
+    color: white;
+    background-color: gray;
+    width: 100%;
+    table-layout: fixed;
+}
+
+#allElementsWindow td {
+    word-wrap: break-word;
+}
+
+#buttonClose {
+    color: red;
+    background: transparent;
+    border: 0px;
+    font-size: 100px;
+    width: 100px;
+    height: 100px;
+}
+
+#buttonClose:hover {
+    color: brown;
+}
+
+
+@media (max-width: 900px){
+    #container {
+        max-width: 800px;
+    }
+    table th {
+        font-size: 15px;
+    }
+    table {
+        font-size: 12px;
+    }
+    #allElementsWindow table{
+        font-size: 10px;
+    }
+    #buttonClose {
+        font-size: 50px;
+    }
+    #buttons {
+        flex-direction: column;
+    }
+    header img {
+        width: 100%;
+    }
+    #buttonBin {
+        width: 100%;
+    }
+
+}
+
+
